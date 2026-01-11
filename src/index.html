@@ -7,38 +7,29 @@
 </head>
 <body>
     <!-- navbar starts here -->
-  <header id="navbar" class="bg-amber-300">
-    <nav class="sticky top-0 flex justify-between items-center p-4  ">
-    <div class="font-bold">
-        logo here
-    </div>
-    <div class="flex gap-x-6">
-        <div>
-            Home
-        </div>
-        <div>
-            Second section
-        </div>
-        <div>
-            Feedback
-        </div>
-        <div>
-            Pricing
-        </div>
-        <div>
-            About Us
-        </div>
-        <div>
-            Contact Us
-        </div>
+  <header id="navbar" class="bg-amber-300 fixed w-full top-0 left-0 z-50">
+    <nav class="sticky container top-0 flex justify-between items-center p-4  ">
+    <div class="font-poppins font-bold sm:text-2xl">logo here</div>
+    <div id="nav-menu" class="absolute top-0 flex gap-x-6 
+    min-h-[80vh] w-full backdrop-blur-sm items-center justify-center
+     duration-300 overflow-hidden lg:static lg:min-h-fit lg:bg-trasnparent lg:w-auto">
+        <ul class="flex flex-col items-center gap-8 lg:flex-row">
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#feedback" class="nav-link">Feedback</a></li>
+            <li><a href="#pricing" class="nav-link">Pricing</a></li>
+            <li><a href="#about" class="nav-link">About us</a></li>
+            <li><a href="#contact" class="nav-link">Contact us</a></li>
+        </ul>
     </div>
     <!-- navbar ends here -->
   </nav>
   </header>
     <!-- main section starts here -->
-   <main class="flex flex-col justify-center items-center text-center mt-12 mb-12">
-    <h1 class="text-4xl font-bold mb-4">Welcome to Our Service</h1>
-    <p class="text-lg mb-6 max-w-xl">We provide the best solutions for your needs. Join us to experience top-notch services tailored just for you.</p>
+   <main class="flex justify-between items-center text-center mt-12 mb-12">
+    <div>
+        <h1 class="text-4xl font-bold mb-4">Welcome to Our Service</h1>
+        <p class="text-lg mb-6 max-w-xl">We provide the best solutions for your needs. Join us to experience top-notch services tailored just for you.</p>
+    </div>
     <button class="bg-yellow-300 text-white px-6 py-3 rounded-md hover:bg-yellow-400">Get Started</button>
    </main>
     <!-- main section ends here -->
